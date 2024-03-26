@@ -13,8 +13,8 @@ const Index = () => {
       </Box>
 
       {/* Hero Section */}
-      <Box py={12} px={6} bg="gray.900" color="white">
-        <HStack spacing={8} alignItems="flex-start">
+      <Box py={{ base: 8, md: 12 }} px={6} bg="gray.900" color="white">
+        <HStack spacing={8} alignItems="flex-start" direction={{ base: "column", md: "row" }}>
           <Image src="https://images.unsplash.com/photo-1604881991720-f91add269bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtZW50YWwlMjBoZWFsdGglMjBzdXBwb3J0fGVufDB8fHx8MTcxMTQ2MDQxM3ww&ixlib=rb-4.0.3&q=80&w=1080" alt="Mental Health" boxSize="400px" objectFit="cover" />
           <VStack spacing={4} alignItems="flex-start">
             <Heading as="h2" size="xl">
@@ -31,11 +31,11 @@ const Index = () => {
       <Divider />
 
       {/* Resources Section */}
-      <Box py={12} px={6} bg="gray.900" color="white">
-        <Heading as="h2" size="xl" mb={8}>
+      <Box py={{ base: 8, md: 12 }} px={6} bg="gray.900" color="white">
+        <Heading as="h2" size={{ base: "lg", md: "xl" }} mb={{ base: 4, md: 8 }}>
           Resources
         </Heading>
-        <HStack spacing={8}>
+        <HStack spacing={{ base: 4, md: 8 }} direction={{ base: "column", md: "row" }}>
           <Box>
             <Heading as="h3" size="lg" mb={4}>
               Helplines
@@ -71,7 +71,7 @@ const Index = () => {
       </Box>
 
       {/* Footer */}
-      <Box bg="gray.800" py={8} px={6}>
+      <Box bg="gray.800" py={{ base: 4, md: 8 }} px={6}>
         <HStack spacing={8} justifyContent="center">
           <Link href="https://facebook.com" isExternal>
             <FaFacebook size={24} />
