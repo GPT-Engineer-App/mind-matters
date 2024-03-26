@@ -1,15 +1,20 @@
 import React from "react";
-import { Box, Heading, Text, VStack, HStack, Image, Divider, Button, Link } from "@chakra-ui/react";
+import { Box, Heading, Text, VStack, HStack, Image, Divider, Button, Link, Switch, useColorMode } from "@chakra-ui/react";
 import { FaPhone, FaEnvelope, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Index = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <Box>
       {/* Header */}
-      <Box bg="gray.800" py={8}>
+      <Box bg="gray.800" py={8} position="relative">
         <Heading as="h1" size="2xl" textAlign="center" color="teal.500">
           Mental Health Matters
         </Heading>
+        <Box position="absolute" top="50%" transform="translateY(-50%)" right={6}>
+          <Switch colorScheme="teal" size="lg" onChange={toggleColorMode} />
+        </Box>
       </Box>
 
       {/* Hero Section */}
