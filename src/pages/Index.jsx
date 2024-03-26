@@ -6,14 +6,14 @@ const Index = () => {
   return (
     <Box>
       {/* Header */}
-      <Box bg="teal.500" py={8}>
-        <Heading as="h1" size="2xl" textAlign="center" color="white">
+      <Box bg="gray.800" py={8}>
+        <Heading as="h1" size="2xl" textAlign="center" color="teal.500">
           Mental Health Matters
         </Heading>
       </Box>
 
       {/* Hero Section */}
-      <Box py={12} px={6}>
+      <Box py={12} px={6} bg="gray.900" color="white">
         <HStack spacing={8} alignItems="flex-start">
           <Image src="https://images.unsplash.com/photo-1604881991720-f91add269bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtZW50YWwlMjBoZWFsdGglMjBzdXBwb3J0fGVufDB8fHx8MTcxMTQ2MDQxM3ww&ixlib=rb-4.0.3&q=80&w=1080" alt="Mental Health" boxSize="400px" objectFit="cover" />
           <VStack spacing={4} alignItems="flex-start">
@@ -31,7 +31,7 @@ const Index = () => {
       <Divider />
 
       {/* Resources Section */}
-      <Box py={12} px={6}>
+      <Box py={12} px={6} bg="gray.900" color="white">
         <Heading as="h2" size="xl" mb={8}>
           Resources
         </Heading>
@@ -71,7 +71,7 @@ const Index = () => {
       </Box>
 
       {/* Footer */}
-      <Box bg="gray.100" py={8} px={6}>
+      <Box bg="gray.800" py={8} px={6}>
         <HStack spacing={8} justifyContent="center">
           <Link href="https://facebook.com" isExternal>
             <FaFacebook size={24} />
